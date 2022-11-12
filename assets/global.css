@@ -65,9 +65,10 @@ body{
 
 }
 
-h1{
-    font-size:48px ;
-    font-weight: 700;
+h1,
+.form_main_h1{
+    font-size:48px  !important;
+    font-weight: 700 !important;
     text-transform: capitalize;
 }
 
@@ -99,3 +100,33 @@ h5.title{
     font-weight: 500;
 
 }
+@media only screen and (max-width: 992px) {
+
+ 
+  h1,
+.form_main_h1 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 17px;
+  }
+  h2.title,
+  h3.title {
+    font-size: 25px;
+  }
+  h5.title {
+    font-size: 20px;
+  }}
+@media only screen and (max-width: 767px) {
+  h1,
+.form_main_h1 {
+    font-size: 30px;
+    line-height: 2rem;
+  }
+  h5.title {
+    font-size: 18px;
+  }
+  p,
+  .faqs .accordion-body {
+    font-size: 16px;
+  }}
