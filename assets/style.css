@@ -237,6 +237,50 @@ select {
     flex-wrap: wrap;
 }
 
+main#heroSec {
+  padding: 170px 0 60px 0;
+  background-image: url(../assets/Images/dashboad.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #fff;
+  border-bottom: 7px solid var(--color-secondary);
+}
+
+.makecenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cards {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 22%;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.marging{
+
+  margin: 0 auto;
+}
+.cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.containerss {
+  padding: 2px 16px;
+}
 
 
 

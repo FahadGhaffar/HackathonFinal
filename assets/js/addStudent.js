@@ -77,8 +77,7 @@ const myFile = document.getElementById("formFileMultiple")
 const rollNumber = document.getElementById("rollNumber")
 const selectSection = document.getElementById("selectSection");
 const formSubmit = document.getElementById("formSubmit");
-
-
+const selectSection1 = document.getElementById("selectSection1");
 // let getTodos = () => {
 //     unsub = onSnapshot(
 //         todoRef,
@@ -118,7 +117,8 @@ formSubmit.addEventListener("click", async () => {
                 rollNumber: rollNumber.value,
                 selectSection: selectSection.value,
 
-                formFileMultiple: url
+                formFileMultiple: url,
+                lastsection: []
 
 
                 // timestamp: new Date(),

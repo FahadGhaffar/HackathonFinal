@@ -48,6 +48,9 @@ const db = getFirestore(app)
 const auth = getAuth();
 
 
+const search = document.getElementById("search");
+const btnsearch = document.getElementById("btnsearch");
+
 
 const btnlogout = document.getElementById("btnlogout");
 
@@ -64,6 +67,44 @@ btnlogout.addEventListener("click", () => {
         });
 
 })
+let todoRef = collection(db, "student");
+const card = document.getElementById("card")
+let unsubscribe;
+btnsearch.addEventListener("click", async () => {
+    card.style.display = "flex";
 
+    try {
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+            card.innerHTML = `  <img src="${doc.data().formFileMultiple}" alt="Avatar" width="150px">
+  <div class="containerss">
+    <h4><b>${doc.data().fullName}</b></h4> 
+    <p>${doc.data().fullName}</p>
+    <p>${doc.data().SelectCourse}</p>
 
+    <div class="col-md-12 mb-2">
+    
+     
+      <Select  type="dropdown" id="selectSection"  data-checking="" class="form-control form_input_height " required>
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+        <option value="Leave">Leave</option>
+        <option value="Late">Late</option>
+        
+
+      </Select>
+      
+    </div>
+        <button class="btn btn-outline-success" id="btnsearch" type="submit">Mark Attendus</button>
+  </div>`;
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+
+    } catch (error) {
+        console.log(err);
+    }
+
+})
 
