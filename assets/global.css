@@ -4,9 +4,9 @@
 :root {
   --font-primary: "Poppins", sans-serif;
   --color-primary: #116EB3;
-  --color-primary-hover: #116EB3;
+  --color-primary-hover: #488abc;
   --color-secondary: #97C547;
-  --color-secondary-hover: #97C547;
+  --color-secondary-hover: #aed271;
   --color-light: #f6f6f6;
   --transition: all 0.3s;
   --translateBtn: translateY(-10px);

@@ -13,7 +13,15 @@ main#heroSec {
   color: #fff;
   border-bottom: 7px solid var(--color-secondary);
 }
+.swal-button {
 
+  background-color: var( --color-primary);
+}
+
+.swal-button :hover{
+
+  background-color: var( --color-secondary-hover);
+}
 /* main#heroSec:before {
     position: absolute;
     content: '';

@@ -131,18 +131,23 @@ const SignInInFirebase = document.getElementById("signIn");
 
 
 SignInInFirebase.addEventListener('click', () => {
+    // // console.log(signinEmail);
+    // console.log(signinEmail.value);
+    // console.log(signinPass.value);
     signInWithEmailAndPassword(auth, signinEmail.value, signinPass.value)
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.users;
             // ...
             console.log(user)
+            swal("Good job!", "You clicked the button!", "success");
             window.location.assign("./Dashboard/")
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             console.log(error)
+            swal("Something going wrong", "please try again", "error");
         });
 })
 
