@@ -1,0 +1,112 @@
+/* global  */
+
+
+@import "./global.css";
+/* global end */
+
+main#heroSec {
+  padding: 150px 0 100vh 0;
+  background-image: url(./Images/hero-cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #fff;
+  border-bottom: 7px solid var(--color-secondary);
+}
+
+/* main#heroSec:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(83deg,#2a00d1 12.33%,#3f53ef 33.75%,#3443fff5 60.02%,#3723e5 89.93%);
+    opacity: 0.8;
+} */
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+
+  .box {
+    animation:
+      bounce 600ms
+      alternate infinite
+      cubic-bezier(.2, .65, .6, 1);
+  }
+
+.bnr-col-txt h1 {
+    margin-top: 51px;
+
+}
+
+.bnr-frm {
+    padding-left: 70px;
+}
+
+.bnr-frm input {
+    padding: 12px 12px;
+}
+
+.bnr-frm button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0;
+    font-size: 18px;
+}
+
+.head-cont {
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+
+.invoice-demo-image {
+    max-width: 700px;
+    margin-left: auto;
+}
+
+.animate-image-2 {
+    position: relative;
+    -webkit-animation: glide 2s ease-in-out alternate infinite;
+}
+
+@media only screen and (max-width: 1200px) { 
+
+.bnr-col-txt {
+    text-align: center;
+    margin-bottom: 37px;
+}
+}
+@media only screen and (max-width: 992px) {
+
+
+    main#heroSec {
+    padding: 150px 0 90px 0;
+  }
+
+    .subtitle {
+    font-size: 23px;
+  }
+
+   .bnr-frm {
+    padding-left: 12px !important;
+} 
+}
+
+@media only screen and (max-width: 575px) {
+
+     main#heroSec {
+    padding: 80px 0 60px 0;
+  }
+
+    .subtitle {
+    font-size: 20px;
+  }
+}
